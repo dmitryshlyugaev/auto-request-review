@@ -40,7 +40,7 @@ async function fetch_config() {
     owner: context.repo.owner,
     repo: context.repo.repo,
     path: config_path,
-    ref: context.payload.pull_request.head.ref, 
+    ref: context.payload.pull_request.head.ref,
   });
 
   const content = Buffer.from(response_body.content, response_body.encoding).toString();
